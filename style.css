@@ -1,0 +1,66 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  background-attachment: fixed;
+  background-image: url("https://images.unsplash.com/photo-1657114650481-35584a571239?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80");
+  background-position: center;
+  background-size: cover;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html {
+  height: 100%;
+}
+body {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+.card {
+  background-color: hsla(0, 0%, 97%, 0.2);
+  border: 1px solid hsla(0, 0%, 97%, 0.4);
+  height: 66%;
+  width: 66%;
+}
+
+.font {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  color: white;
+  font-family: "Glass Antiqua", cursive;
+  font-size: 36px;
+}
+.glassmorphism {
+  background: inherit;
+  position: relative;
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.glassmorphism::before {
+  background: inherit;
+  content: "";
+  height: calc(100% + 2 * 10px);
+  width: calc(100% + 2 * 10px);
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  filter: blur(10px);
+  box-shadow: inset 0 0 0 50vw hsla(0, 0%, 97%, 0.2);
+}
+.glassmorphism span {
+  position: absolute;
+}
